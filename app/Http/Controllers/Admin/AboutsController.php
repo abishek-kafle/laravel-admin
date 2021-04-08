@@ -86,7 +86,7 @@ class AboutsController extends Controller
         $about = About::find($id);
         $about->description = $request->input('description');
         $about->save();
-        return redirect('about')->with('status','Post Updated Successfully');
+        return redirect('about')->with('status','Post Updated Successfully!!');
         // echo "Hello Bug";
     }
 
