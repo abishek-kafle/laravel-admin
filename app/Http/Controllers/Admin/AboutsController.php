@@ -100,6 +100,6 @@ class AboutsController extends Controller
     {
         $about = About::findorFail($id);
         $about->delete();
-        return redirect('about')->with('status','Post Deleted Successfully');
+        return redirect('about')->with('status','Post Deleted Successfully!!');
     }
 }
